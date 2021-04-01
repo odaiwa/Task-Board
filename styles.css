@@ -67,7 +67,7 @@ label {
     margin: 10px;
 }
 
-.glyphicon-remove-circle {
+.fa-window-close {
     opacity: 0.0;
     color: red;
     margin-top: 10px;
@@ -111,12 +111,14 @@ label {
 }
 
 .task-text {
-    width: 260px;
-    height: 280px;
+    width: 250px;
+    height: 260px;
     overflow: auto;
     display: inline-block !important;
     margin-left: 8px;
+    margin-top: 15px;
     margin-bottom: 0px;
+    font-size:20px;
     font-family: noteBodyText;
 }
 
