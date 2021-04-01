@@ -1,0 +1,82 @@
+@font-face{
+    font-family: TitleFont;
+    src:url(assets/fonts/strandall\ demo.ttf)
+}
+
+#myTitle{
+    text-align: center;
+    font-family: TitleFont;
+    color: black;
+    margin-top: 30px;
+    font-size: 80px;
+    font-weight: bold;
+}
+#addTask,#deleteInput{
+    margin: 20px;
+}
+#deleteInput{
+    width: 90px;
+}
+#label-for-input{
+    display: block;
+}
+#input-text{
+    display: block;
+    background: url("assets/images/formbg111.jpg");
+    height: 200px;
+    width: 600px;
+    min-height: 100px;
+    /* text-align: center; */
+    margin: 5%;
+    background: repeating-linear-gradient(
+        0,
+        rgb(8, 8, 8),
+        #FFFF 1px,
+        #FFFF 1px,
+        #FFFF 24px
+      );
+}
+#tools{
+    text-align: center;
+}
+#tools >*{
+    width: 150px;
+}
+body {
+    width: auto;
+    background-image: url("assets/images/tile.jpg");
+}
+#date-input{
+    text-align: center;
+    
+}
+
+label{
+    font-family: TitleFont;
+    font-size: x-large;
+}
+
+#tasks > img{
+    margin: 10px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+#data-input,#time-input{
+    display: ;
+}

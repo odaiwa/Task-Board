@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FavIcon -->
+    <link rel="icon" href="assets/images/iconfinder_document-03_1622833.svg" type="image/x-icon">
+    <!-- Import Style -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Import Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Task List</title>
+    <script defer src="main.js"></script>
+</head>
+
+<body>
+    <h1 id="myTitle">My Task Board</h1>
+
+    <div class="row  d-flex justify-content-center">
+        <div class="col d-flex justify-content-center">
+            <textarea id="input-text" autofocus></textarea>
+        </div>
+    </div>
+
+    <div id="tools">
+        <input type="date" id="date-input" class="btn btn-light">
+        <input type="time" id="hour-input" class="btn btn-light">
+        <button type="button" onclick="addTask()" class="btn btn-light">Add note</button>
+        <button type="button" onclick="cleanInput()" class="btn btn-light">Clear</button><br><br>
+        <button type="button" onclick="cleanStorage()" class="btn btn-light">Clear storage</button>
+    </div>
+
+
+
+</body>
+
+</html>
