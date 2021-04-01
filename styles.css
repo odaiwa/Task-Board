@@ -1,9 +1,14 @@
-@font-face{
+@font-face {
     font-family: TitleFont;
-    src:url(assets/fonts/strandall\ demo.ttf)
+    src: url(assets/fonts/strandall\ demo.ttf)
 }
 
-#myTitle{
+@font-face {
+    font-family: noteBodyText;
+    src: url(assets/fonts/Aileron-Regular.otf)
+}
+
+#myTitle {
     text-align: center;
     font-family: TitleFont;
     color: black;
@@ -11,16 +16,21 @@
     font-size: 80px;
     font-weight: bold;
 }
-#addTask,#deleteInput{
+
+#addTask,
+#deleteInput {
     margin: 20px;
 }
-#deleteInput{
+
+#deleteInput {
     width: 90px;
 }
-#label-for-input{
+
+#label-for-input {
     display: block;
 }
-#input-text{
+
+#input-text {
     display: block;
     background: url("assets/images/formbg111.jpg");
     height: 200px;
@@ -28,36 +38,43 @@
     min-height: 100px;
     /* text-align: center; */
     margin: 5%;
-    background: repeating-linear-gradient(
-        0,
-        rgb(8, 8, 8),
-        #FFFF 1px,
-        #FFFF 1px,
-        #FFFF 24px
-      );
+    background: repeating-linear-gradient( 0, rgb(8, 8, 8), #FFFF 1px, #FFFF 1px, #FFFF 24px);
 }
-#tools{
+
+#tools {
     text-align: center;
 }
-#tools >*{
+
+#tools>* {
     width: 150px;
 }
+
 body {
     width: auto;
     background-image: url("assets/images/tile.jpg");
 }
-#date-input{
+
+#date-input {
     text-align: center;
-    
 }
 
-label{
+label {
     font-family: TitleFont;
     font-size: x-large;
 }
 
-#tasks > img{
+#tasks>img {
     margin: 10px;
+}
+
+.glyphicon-remove-circle {
+    opacity: 0.0;
+    color: red;
+    margin-top: 10px;
+    height: 20px;
+    font-size: 30px;
+    transition: all 500ms ease-in-out;
+    margin-left: 250px;
 }
 
 @keyframes fadeIn {
@@ -77,6 +94,77 @@ label{
         opacity: 0;
     }
 }
-#data-input,#time-input{
-    display: ;
+
+.note {
+    width: 300px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 30px;
+    justify-content: center;
+    background: url("assets/images/notebg.png");
+    background-size: 300px 400px;
+    animation: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    opacity: 1;
+}
+
+.task-text {
+    width: 260px;
+    height: 280px;
+    overflow: auto;
+    display: inline-block !important;
+    margin-left: 8px;
+    margin-bottom: 0px;
+    font-family: noteBodyText;
+}
+
+.task-footer {
+    width: 250px;
+    height: 40px;
+    margin-left: 15px;
+    margin-bottom: 30px;
+    margin-top: 0px;
+    font-size: 20px;
+    font-family: noteBodyText;
+}
+
+.task-on-board>i.glyphicon.glyphicon-remove-circle {
+    width: 10px;
+    height: 10px;
+}
+
+div:hover>i {
+    opacity: 1.0;
+}
+
+.task {
+    width: 300px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 30px;
+    justify-content: center;
+    background: url("assets/images/notebg.png");
+    background-size: 300px 400px;
+    animation: fadeIn;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    opacity: 1;
+}
+
+.task-on-board {
+    width: 300px;
+    height: 400px;
+    af display: grid;
+    grid-template-columns: 1fr;
+    margin: 30px;
+    justify-content: center;
+    background: url("assets/images/notebg.png");
+    background-size: 300px 400px;
+    animation: fadeIn;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    opacity: 1;
 }

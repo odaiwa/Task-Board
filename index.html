@@ -10,8 +10,7 @@
     <!-- Import Style -->
     <link rel="stylesheet" href="styles.css">
     <!-- Import Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Task Board and TODO List</title>
     <script defer src="main.js"></script>
 </head>
@@ -31,8 +30,11 @@
         <button type="button" onclick="addTaskToBoard()" class="btn btn-light">Add note</button>
         <button type="button" onclick="cleanInput()" class="btn btn-light">Clear</button><br><br>
         <button type="button" onclick="cleanStorage()" class="btn btn-light">Clear storage</button>
+        <!-- <button type="button" onclick="deleteNoteFromLocalStorage()" class="btn btn-light">Clear storage</button> -->
     </div>
+    <div class="row  m-5" id="tasks-board">
 
+    </div>
 
 
 </body>
